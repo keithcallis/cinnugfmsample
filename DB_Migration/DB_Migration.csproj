@@ -46,6 +46,7 @@
     <Compile Include="Migrations\Sprint01\AddSampleTable.cs" />
     <Compile Include="Migrations\Sprint01\AddSampleTableDataTest.cs" />
     <Compile Include="Migrations\Sprint02\UsersAndAccounts.cs" />
+    <Compile Include="Migrations\Sprint03\AddufnSprintCSV.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

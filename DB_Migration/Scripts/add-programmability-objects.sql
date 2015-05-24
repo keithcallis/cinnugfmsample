@@ -32,8 +32,6 @@ GO
 -- This is where we add Functions for DBO
 ------------------------------------------
 PRINT 'Adding Functions for DBO...';
-PRINT 'Adding Function dbo.ufnSplitCSV.function.sql...';
-:R ".\Schemas\dbo\Programmability\Functions\dbo.ufnSplitCSV.function.sql"
 
 GO
 
