@@ -35,6 +35,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -42,10 +43,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Migrations\Sprint01\AddSampleTable.cs" />
+    <Compile Include="Migrations\Sprint01\AddSampleTableDataTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="dev-deploy.ps1">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="dev-down.ps1">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="packages.config" />
@@ -80,7 +86,6 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Migratioins\Sprint01\" />
     <Folder Include="Schemas\dbo\Programmability\Functions\" />
     <Folder Include="Schemas\dbo\Programmability\Stored Procedures\" />
     <Folder Include="Schemas\dbo\Programmability\Types\User Defined Data Types\" />

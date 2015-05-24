@@ -24,9 +24,12 @@ if ($LASTEXITCODE -ne 0) {break;}
 
 ECHO "Migrating..."
 
-.\MIGRATE -db SqlServer2008 -connection "data source=(local);initial catalog=$dbName;integrated security=True;" -a DB_Migration.dll -t migrate:up -tag dev
+.\MIGRATE -db SqlServer2008 -connection "data source=(local);initial catalog=$dbName;integrated security=True;" -a DB_Migration.dll -t migrate:up -tag Test
 if ($LASTEXITCODE -ne 0) {break;}
 
+ECHO "=========================  >>  "
+ECHO "=========================  >>  start of SQL Scripts"
+ECHO "=========================  >>  "
 ECHO "Running programmability..."
 
 SQLCMD -S '(local)' -E -i 'scripts\add-programmability-objects.sql' -v DatabaseName="$dbName"

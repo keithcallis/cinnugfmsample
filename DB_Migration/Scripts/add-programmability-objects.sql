@@ -1,4 +1,6 @@
-﻿-- This is where we add objects to the DBO Schema
+﻿PRINT "now in add-programmability-objects.sql"
+
+-- This is where we add objects to the DBO Schema
 USE [$(DatabaseName)]
 GO
 
@@ -19,6 +21,7 @@ GO
 -- This is where we add Views for DBO
 ---------------------------------------
 PRINT 'Adding Views for DBO...';
+GO
 
 PRINT 'Adding View dbo.vw_aspnet_Applications.view.sql...';
 -- : R ".\Schemas\dbo\Views\dbo.vw_aspnet_Applications.view.sql"
