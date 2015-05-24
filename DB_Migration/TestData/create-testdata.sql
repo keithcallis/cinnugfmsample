@@ -23,14 +23,14 @@ SET QUOTED_IDENTIFIER ON;
 /*
 	Add initial data for database
 */
---PRINT 'dbo.Accounts.Table.sql'
---:R ".\TestData\dbo.Accounts.Table.sql"
+PRINT 'dbo.Accounts.Table.sql'
+:R ".\TestData\dbo.Accounts.Table.sql"
 go
---PRINT 'dbo.Users.Table.sql'
---:R ".\TestData\dbo.Users.Table.sql"
+PRINT 'dbo.Users.Table.sql'
+:R ".\TestData\dbo.Users.Table.sql"
 go
---PRINT 'dbo.UserAccounts.Table.sql'
---:R ".\TestData\dbo.UserAccounts.Table.sql"
+PRINT 'dbo.UserAccounts.Table.sql'
+:R ".\TestData\dbo.UserAccounts.Table.sql"
 go
 
 

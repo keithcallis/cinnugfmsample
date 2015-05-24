@@ -23,7 +23,7 @@ GO
 PRINT 'Adding Views for DBO...';
 GO
 
-PRINT 'Adding View dbo.vw_aspnet_Applications.view.sql...';
+--PRINT 'Adding View dbo.vw_aspnet_Applications.view.sql...';
 -- : R ".\Schemas\dbo\Views\dbo.vw_aspnet_Applications.view.sql"
 GO
 
@@ -32,6 +32,9 @@ GO
 -- This is where we add Functions for DBO
 ------------------------------------------
 PRINT 'Adding Functions for DBO...';
+PRINT 'Adding Function dbo.ufnSplitCSV.function.sql...';
+:R ".\Schemas\dbo\Programmability\Functions\dbo.ufnSplitCSV.function.sql"
+
 GO
 
 --------------------------------------------------
@@ -39,11 +42,8 @@ GO
 --------------------------------------------------
 PRINT 'Adding Stored Procedures for DBO...';
 
---PRINT 'Adding Stored Procedure dbo.Department_Delete.proc.sql...';
---GO
---PRINT 'Adding Stored Procedure dbo.Department_Insert.proc.sql...';
---GO
---PRINT 'Adding Stored Procedure dbo.Department_Update.proc.sql...';
+PRINT 'Adding Stored Procedure dbo.sel_AllAccountsUsers.proc.sql...';
+:R ".\Schemas\dbo\Programmability\Stored Procedures\dbo.sel_AllAccountsUsers.proc.sql"
 GO
 
 
@@ -54,9 +54,9 @@ GO
 -- Note: full-text indexes cannot be created under FM
 -- because FM wraps all the changes within a user transaction
 ---------------------------------------------------------------
-PRINT 'Adding Full-Text Indexes for dbo...';
+--PRINT 'Adding Full-Text Indexes for dbo...';
 
-PRINT 'Adding Full-Text Index dbo.SearchData.fulltextindex.sql...';
+--PRINT 'Adding Full-Text Index dbo.SearchData.fulltextindex.sql...';
 -- : R ".\Schemas\dbo\Indexes\dbo.SearchData.fulltextindex.sql"
 GO
 

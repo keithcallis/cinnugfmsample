@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="Migrations\Sprint01\AddSampleTable.cs" />
     <Compile Include="Migrations\Sprint01\AddSampleTableDataTest.cs" />
+    <Compile Include="Migrations\Sprint02\UsersAndAccounts.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -64,6 +65,12 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Migrate.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dbo\Programmability\Functions\dbo.ufnSplitCSV.function.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dbo\Programmability\Stored Procedures\dbo.sel_AllAccountsUsers.proc.sql">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Scripts\add-programmability-objects.sql">
@@ -86,8 +93,6 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Schemas\dbo\Programmability\Functions\" />
-    <Folder Include="Schemas\dbo\Programmability\Stored Procedures\" />
     <Folder Include="Schemas\dbo\Programmability\Types\User Defined Data Types\" />
     <Folder Include="Schemas\dbo\Views\" />
   </ItemGroup>
