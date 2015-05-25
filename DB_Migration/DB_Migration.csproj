@@ -93,6 +93,9 @@
     <Content Include="TestData\dbo.Users.Table.sql">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="TestData\FM_DB_Commands.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Schemas\dbo\Programmability\Types\User Defined Data Types\" />
