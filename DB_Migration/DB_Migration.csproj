@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Migrations\Sprint06\AutoReverseNewColumn.cs" />
     <Compile Include="Migrations\Sprint01\AddSampleTable.cs" />
     <Compile Include="Migrations\Sprint01\AddSampleTableDataTest.cs" />
     <Compile Include="Migrations\Sprint02\UsersAndAccounts.cs" />
