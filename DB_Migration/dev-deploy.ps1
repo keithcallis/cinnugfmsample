@@ -24,7 +24,7 @@ if ($LASTEXITCODE -ne 0) {break;}
 
 ECHO "Migrating..."
 
-.\MIGRATE -db SqlServer2008 -connection "data source=(local);initial catalog=$dbName;integrated security=True;" -a DB_Migration.dll -t migrate:up -tag Test
+.\MIGRATE -db SqlServer2008 -connection "data source=(local);initial catalog=$dbName;integrated security=True;" -a DB_Migration.dll -t migrate:up -tag Test 
 if ($LASTEXITCODE -ne 0) {break;}
 
 ECHO "=========================  >>  "

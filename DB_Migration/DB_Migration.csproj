@@ -51,6 +51,7 @@
     <Compile Include="Migrations\Sprint04\AddufnLeadingZeros.cs" />
     <Compile Include="Migrations\Sprint05\AddColumnToSample.cs" />
     <Compile Include="Migrations\Sprint05\AddColumnToUsers.cs" />
+    <Compile Include="Migrations\Sprint07\LongRunningTransaction.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
